@@ -1,0 +1,11 @@
+handler:
+  slack:
+    token: ""
+    channel: ""
+resource:
+  deployment: false
+  replicationcontroller: false
+  replicaset: false
+  daemonset: false
+  services: true
+  pod: true

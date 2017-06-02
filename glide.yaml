@@ -1,0 +1,27 @@
+package: github.com/jpisaac/alert-watch
+import:
+- package: github.com/Sirupsen/logrus
+  version: ~0.11.5
+- package: github.com/mitchellh/go-homedir
+- package: github.com/nlopes/slack
+  version: ~0.1.0
+- package: github.com/spf13/cobra
+- package: github.com/spf13/viper
+- package: gopkg.in/yaml.v2
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/fields
+  - pkg/util/wait
+- package: k8s.io/client-go
+  version: 3.0.0-beta.0
+  subpackages:
+  - kubernetes
+  - pkg/api
+  - rest
+  - tools/cache
+- package: k8s.io/kubernetes
+  version: 1.7.0-alpha.4
+  subpackages:
+  - pkg/api
+- package: github.com/pelletier/go-buffruneio
+  version: ^0.2.0
